@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>MO:MO संसार</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="image-container">
+      <div class="container container-image">
+        <div class="squished-text">
+          <h1 class="main-text">
+            <strong>BEST</strong> मःम
+            <img src="./images/momo-icon-white.png" alt="" class="dumpling" />
+            at
+          </h1>
+          <p class="main-text">
+            <span class="margin-text" id="points  "><strong>MO:MO</strong> संसार</span>
+          </p>
+          <p class="main-text location">
+            <i class="ri-map-pin-line"></i> बेलचोक, नारायणगढ, चितवन
+          </p>
+        </div>
+        <h2 class="contact">
+          Contact Us: <br /><i class="ri-phone-line"> </i><a href="tel:+977 056-548975">056-548975</a>
+        </h2>
+        <p class="upper-text">सवच्छ र स्वादिलो</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="container container-form">
+        <p class="text-gray">For Home Delivery</p>
+        <p class="text-orange">Select your options</p>
+        <div class="x-momos">
+          <button class="keema-type clicked" id="chicken-btn" onclick="btnSelcted('chicken-btn')">
+            <p>Chicken MOMO</p>
+          </button>
+          <button class="keema-type" id="buff-btn" onclick="btnSelcted('buff-btn')">
+            <p>Buff MOMO</p>
+          </button>
+          <button class="keema-type" id="veg-btn" onclick="btnSelcted('veg-btn')">
+            <p>Veg MOMO</p>
+          </button>
+        </div>
+        <!-- momos type -->
+        <div class="food-cart">
+          <!-- chicken momo cart starts -->
+          <div class="cart" id="chicken-cart">
+            <div class="chicken-steam-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container chicken-steam-img"></div>
+                </div>
+                <h2 class="title">Chicken Steam MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.150</p>
+                <hr />
+                <!-- <div class="price-quantity"> -->
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_chicken_steamed,count_chicken_steamed)"></i>
+
+                  <i class="ri-add-line add"
+                    onclick="increaseCount(count_container_chicken_steamed,count_chicken_steamed)"></i>
+                <!-- </div> -->
+                <div class="counter_div" id="count_container_chicken_steamed" style="display: none">
+                  <p class="count" id="count_chicken_steamed"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chicken-fried-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container chicken-fried-img"></div>
+                </div>
+                <h2 class="title">Chicken Fried MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.170</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_chicken_fried,count_chicken_fried)"></i>
+                  <i class="ri-add-line add"
+                    onclick="increaseCount(count_container_chicken_fried,count_chicken_fried)"></i>
+                </div>
+                <div class="counter_div" id="count_container_chicken_fried" style="display: none">
+                  <p class="count" id="count_chicken_fried"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chicken-jhol-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container chicken-jhol-img"></div>
+                </div>
+                <h2 class="title">Chicken Jhol MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.150</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_chicken_jhol,count_chicken_jhol)"></i>
+                  <i class="ri-add-line add"
+                    onclick="increaseCount(count_container_chicken_jhol,count_chicken_jhol)"></i>
+                </div>
+                <div class="counter_div" id="count_container_chicken_jhol" style="display: none">
+                  <p class="count" id="count_chicken_jhol"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chicken-kothey-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container chicken-kothey-img"></div>
+                </div>
+                <h2 class="title">Chicken Kothey MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.200</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_chicken_kothey,count_chicken_kothey)"></i>
+                  <i class="ri-add-line add"
+                    onclick="increaseCount(count_container_chicken_kothey,count_chicken_kothey)"></i>
+                </div>
+                <div class="counter_div" id="count_container_chicken_kothey" style="display: none">
+                  <p class="count" id="count_chicken_kothey"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- chicken momo cart ends -->
+
+          <!-- buff momo cart start -->
+          <div class="cart" id="buff-cart" style="display: none">
+            <div class="buff-steam-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container buff-steam-img"></div>
+                </div>
+                <h2 class="title">Buff Steam MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.120</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_buff_steamed,count_buff_steamed)"></i>
+
+                  <i class="ri-add-line add"
+                    onclick="increaseCount(count_container_buff_steamed,count_buff_steamed)"></i>
+                </div>
+                <div class="counter_div" id="count_container_buff_steamed" style="display: none">
+                  <p class="count" id="count_buff_steamed"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buff-fried-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container buff-fried-img">
+                    <!-- <img src="./images/buff/buff-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Buff Fried MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.170</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_buff_fried,count_buff_fried)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_buff_fried,count_buff_fried)"></i>
+                </div>
+                <div class="counter_div" id="count_container_buff_fried" style="display: none">
+                  <p class="count" id="count_buff_fried"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buff-jhol-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container buff-jhol-img">
+                    <!-- <img src="./images/buff/buff-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Buff Jhol MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.150</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_buff_jhol,count_buff_jhol)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_buff_jhol,count_buff_jhol)"></i>
+                </div>
+                <div class="counter_div" id="count_container_buff_jhol" style="display: none">
+                  <p class="count" id="count_buff_jhol"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buff-kothey-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container buff-kothey-img">
+                    <!-- <img src="./images/buff/buff-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Buff Kothey MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.200</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_buff_kothey,count_buff_kothey)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_buff_kothey,count_buff_kothey)"></i>
+                </div>
+                <div class="counter_div" id="count_container_buff_kothey" style="display: none">
+                  <p class="count" id="count_buff_kothey"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- buff momo section endss -->
+
+          <!-- veg momo cart  statrts -->
+          <div class="cart" id="veg-cart" style="display: none">
+            <div class="veg-steam-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container veg-steam-img"></div>
+                </div>
+                <h2 class="title">Veg Steam MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.120</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_veg_steamed,count_veg_steamed)"></i>
+
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_veg_steamed,count_veg_steamed)"></i>
+                </div>
+                <div class="counter_div" id="count_container_veg_steamed" style="display: none">
+                  <p class="count" id="count_veg_steamed"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="veg-fried-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container veg-fried-img">
+                    <!-- <img src="./images/veg/veg-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Veg Fried MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.170</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_veg_fried,count_veg_fried)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_veg_fried,count_veg_fried)"></i>
+                </div>
+                <div class="counter_div" id="count_container_veg_fried" style="display: none">
+                  <p class="count" id="count_veg_fried"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="veg-jhol-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container veg-jhol-img">
+                    <!-- <img src="./images/veg/veg-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Veg Jhol MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.150</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub" onclick="decreaseCount(count_container_veg_jhol,count_veg_jhol)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_veg_jhol,count_veg_jhol)"></i>
+                </div>
+                <div class="counter_div" id="count_container_veg_jhol" style="display: none">
+                  <p class="count" id="count_veg_jhol"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="veg-kothey-cart momo-cart">
+              <div class="cart-padding">
+                <div class="plate-center">
+                  <div class="food-image-container veg-kothey-img">
+                    <!-- <img src="./images/veg/veg-steamed.jpg" class="food-image" alt="" /> -->
+                  </div>
+                </div>
+                <h2 class="title">Veg Kothey MO:MO</h2>
+                <hr />
+                <p class="price"><span class="npr">रू</span>.200</p>
+                <hr />
+                <div class="price-quantity">
+                  <i class="ri-subtract-line sub"
+                    onclick="decreaseCount(count_container_veg_kothey,count_veg_kothey)"></i>
+                  <i class="ri-add-line add" onclick="increaseCount(count_container_veg_kothey,count_veg_kothey)"></i>
+                </div>
+                <div class="counter_div" id="count_container_veg_kothey" style="display: none">
+                  <p class="count" id="count_veg_kothey"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- order now button -->
+      <button class="order-btn" onclick="sendData()">
+        <p>Order</p>
+        <div id="order_count_container" style="display: none;">
+          <p class="order_count" id="order_total_count"></p>
+        </div>
+      </button>
+      
+    </div>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

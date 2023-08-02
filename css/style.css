@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box  ;
+}
+
+/*Tpography*/
+
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+h1,
+.main-text{
+    font-size: 2.25rem;
+    font-weight: 100;
+    margin:0px auto;
+    line-height: 1.5em;
+}
+
+h1{
+    padding-top: 2rem;
+}
+
+.location{
+    padding-bottom: 4em;
+}
+
+.location,
+h2,p{
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 > a{
+    /* text-decoration: none; */
+    color: #fff;
+}
+
+.dumpling{
+    height: 24px;
+}
+
+strong{
+    font-weight: 900;
+    color: white;
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container{
+    --bg-image: url("../images/momo-bg-blured.jpg");
+    --bg-image-opacity: 0.65;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+
+.image-container::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    opacity: var(--bg-image-opacity);
+    z-index: -1;
+}
+
+
+.upper-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-top: 6px solid;
+    border-image: linear-gradient(45deg, #ff713b, #ffa51D) 1;
+    padding-top: 0.5em;
+    order: -1;
+}
+
+.form-container{
+    color: #404040;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container{
+    max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
+.container-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* min-height: 100vh; */
+    height: 100%;
+}
+
+.text-gray{
+    color: #404040;
+    margin-top: 1rem;
+}
+
+.text-orange{
+    color: #f18119;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/*MOMO containers*/
+
+.x-momos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 5rem;
+}
+
+.keema-type{
+    --padding: 10px;
+    --color: #ff9900;
+    --background-color: white;
+    --border: 2.5px solid #ff713b;
+    --border-radius: 10px;
+
+    padding: var(--padding);
+    color: var(--color);
+    background-color: var(--background-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+.keema-type:hover,
+.clicked{
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    color: white;
+    border-image: linear-gradient(45deg, #ff713b, #ffa51D) 1;
+}
+
+.unclicked{
+    --padding: inherit;
+    --color: inherit;
+    --background-color: inherit;
+    --border: inherit;
+    --border-radius: inherit;
+}
+
+.food-cart{
+    /* border: 1px solid black; */
+    margin: 1em;
+}
+
+.cart{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    /* gap: 5rem; */
+}
+
+
+.momo-cart{
+    width: 70%;
+    box-shadow: 0 0 8px 1px rgba(128, 128, 128, 0.5);
+    border-radius: 50px;
+    position: relative;
+    border: 2.5px solid #ff713b;
+    color: rgb(71, 71, 71);
+    transition-delay: 200ms;
+    padding: 0.5rem 1rem;
+}
+
+.momo-cart:hover{
+    /* background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    color: white; */
+    cursor: pointer;
+    /* font-size: larger; */
+    
+}
+
+.plate-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4.5rem;
+    
+}
+
+
+.food-image-container{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100px;
+    position: absolute;
+    background-position: center;
+    background-size:125%;
+    box-shadow: 0 0 8px 4px rgba(128, 128, 128, 0.5);
+    border: 2.5px solid #ff713b;
+}
+
+.chicken-steam-img{
+    background-image: url("../images/chicken/chicken-steamed.jpg");
+    background-size: 150%;
+}
+
+.chicken-fried-img{
+    background-image: url("../images/chicken/chicken-fried.jpg");
+}
+
+.chicken-jhol-img{
+    background-image: url("../images/chicken/chicken-jhol.jpg");
+}
+
+.chicken-kothey-img{
+    background-image: url("../images/chicken/chicken-khotey.jpg");
+}
+
+.buff-steam-img{
+    background-image: url("../images/buff/buff-steamed.png");
+    background-size: 150%;
+}
+
+.buff-fried-img{
+    background-image: url("../images/buff/buff-fried.jpg");
+    background-size: 150%;
+}
+
+.buff-jhol-img{
+    background-image: url("../images/buff/buff-jhol.jpg");
+    background-size: 200%;
+}
+
+.buff-kothey-img{
+    background-image: url("../images/buff/buff-khotey.jpg");
+    background-size: 150%;
+}
+
+.veg-steam-img{
+    background-image: url("../images/veg/veg-steamed.jpg");
+    background-size: 105%;
+}
+
+.veg-fried-img{
+    background-image: url("../images/veg/veg-fried.jpg");
+    background-size: 200%;
+    background-position-x: 30%;
+    background-position-y: 70%;
+}
+
+.veg-jhol-img{
+    background-image: url("../images/veg/veg-jhol.png");
+    background-size: 200%;
+    background-position-x: 44%;
+}
+
+.veg-kothey-img{
+    background-image: url("../images/veg/veg-kothey.jpg");
+    background-size: 120%;
+}
+
+.title{
+    font-size: 1.5rem;
+    /* border-bottom: 1px solid black; */
+}
+
+.price{
+    font-size: 1.375rem;
+}
+
+.npr{
+    font-size: 1.2rem;
+}
+
+.cart-padding{
+    padding: 0px 0.9rem;
+}
+
+.price-quantity{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+
+.sub,
+.add{
+    font-size: 2rem;
+}
+
+
+.add:hover,
+.sub:hover{
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+}
+
+
+.count{
+    background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: small;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.order-btn{
+    --padding: 1rem 2rem;
+    --color: #ff9900;
+    --background-color: white;
+    --border: 2.5px solid #ff713b;
+    --border-radius: 10px;
+    margin-bottom: 1em;
+    position: relative;
+    padding: var(--padding);
+    color: var(--color);
+    background-color: var(--background-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.order-btn:hover,   
+.clicked{
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    color: white;
+    border-image: linear-gradient(45deg, #ff713b, #ffa51D) 1;
+}
+
+.order_count{
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(45deg, #ff713b, #ffa51D);
+    color: white;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 999px;
+    padding: 1rem;
+    font-size: small;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+/* media  queries */
+
+@media (min-width: 970px) {
+    body{
+        font-size: 1.125rem;
+    }
+
+    .main-container{
+        flex-direction: row;  
+    }
+
+    .image-container,
+    .form-container{
+        width: 50%;
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+    .image-container{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .form-container{
+        margin-top: 0;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2,p{
+        font-size: 1.75rem;
+    }
+
+    br{
+        display: none;
+    }
+
+    /* .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .momo-cart{
+        width: 90%;
+    }
+}
+
+@media (max-width:930px){
+    br{
+        display: block;
+    }
+}
+
+@media(max-width:540px){
+    .x-momos{
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .cart{
+        gap: 6rem;
+    }
+}   
+
+@media(min-width:540px){
+    .cart{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}
